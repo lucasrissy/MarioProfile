@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(resources/maxresdefault.jpg);
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.skills{
+    text-align: center;
+    width: 15%;
+    position: absolute;
+    top:17%;
+    left: 80%;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+}
+.skills h6{
+    margin-bottom: 30px;
+}
+
+.skills .progress{
+    margin-bottom: 30px;
+    height: 25px;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+header{
+    font-family: 'Press Start 2P';
+    height: 10%;
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+
+}
+.headerIndex2{
+    font-family: 'Press Start 2P';
+    height: 10%;
+    display: flex;
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+.cloud:first-child{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    
+    animation: moveFirstCloud 1.5s infinite;
+}
+.cloud:nth-child(3){
+    z-index: 1;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    animation: moveSecondCloud 1.5s infinite;
+}
+.mario{
+    z-index: 0;
+    position: absolute;
+    top: 76%;
+    left: 10%; 
+}
+.title{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+    font-weight: 100;
+}
+.title h1{
+    margin-bottom: 20px;
+}
+.title h6{
+    font-size: 10px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    animation: animate 0.8s infinite;
+}
+.content{
+    height: 20%;
+    margin-top: -400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .image img{
+    border-radius: 50%;
+}
+.profile{
+    width: 110%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.profile .division{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.profile .course{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.profile .contacts{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.footer{
+    font-family:'Press Start 2P';
+   margin-bottom: 150px;
+}
+.footerIndex2{
+    font-family:'Press Start 2P'; 
+    margin-top: -10%;
+    position:relative;
+    top: 0px;
+}
+.click{
+    z-index: 1;
+    position: fixed;
+    top: 78%;
+    left: 7%;
+    font-family:'Press Start 2P' ;
+    font-size: 20px;
+    animation: animate 1.5s infinite;
+}
+/****INDEX2******/
+
+.contentIndex2{
+    height: 500px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+.bar{
+    width: 500px;
+    margin-top: -685px;
+    margin-bottom: -40%;
+}
+.bar .progress{
+    margin-bottom: 30px;
+    height: 40px;
+    box-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+/*ESPECIAL EFFECTS*/
+
+.mario:hover{
+    cursor: pointer;
+}
+
+.title > h1:hover,.title > h6:hover, span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.progress:hover{
+    
+    height: 30px;
+}
+@keyframes blink {
+    
+}
+@keyframes animate {
+    0%{
+       opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes moveFirstCloud {
+    0%{
+        left: 15% ;
+    }
+    25%{
+        left: 18%;
+    }
+    50%{
+        left: 20%;
+    }
+    75%{
+        left: 18%;
+    }
+    100%{
+        left: 15%;
+    }
+}
+@keyframes moveSecondCloud {
+    0%{
+        left: 74% ;
+    }
+    25%{
+        left: 72%;
+    }
+    50%{
+        left: 70%;
+    }
+    75%{
+        left: 72%;
+    }
+    100%{
+        left: 74%;
+    }
+    
+}
